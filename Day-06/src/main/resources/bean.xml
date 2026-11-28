@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id = "Payment" class="Payment.PaymentService">-->
+<!--        <constructor-arg value="UPI"/>-->
+<!--        <constructor-arg value="5"/>-->
+<!--    </bean>-->
+
+<!--    <bean id = "OrderService" class="org.example.OrederService">-->
+<!--        <property name="PaymentService" ref="Payment"/>-->
+<!--    </bean>-->
+
+
+    <!--    <bean id = "OrderService" class="org.example.OrederService">-->
+<!--        <constructor-arg ref="Payment"/>-->
+<!--            </bean>-->
+
+<!--        <bean id = "upiPayment" class="org.example.Payment.UPIPayment"/>-->
+
+<!--       <bean id = "cardPayment" class="org.example.Payment.CardPayment"/>-->
+
+<!--    <bean id = "OrderService" class="org.example.OrederService">-->
+<!--    <constructor-arg ref="cardPayment"/>-->
+<!--    </bean>-->
+
+<!--    <bean id = "UserService" class="org.example.UsreService">-->
+<!--        <constructor-arg name="userdata">-->
+<!--           <map>-->
+<!--               <entry key="1" value="Shahil"/>-->
+<!--               <entry key="2" value="Minakshi"/>-->
+<!--               <entry key="3" value="Misha"/>-->
+<!--               <entry key="4" value="Sambhav"/>-->
+<!--           </map>-->
+<!--        </constructor-arg>-->
+<!--    </bean>-->
+
+    <bean id="userService"
+          class="org.example.UsreService"
+          init-method="init"
+          destroy-method="cleanup"
+    />
+</beans>
